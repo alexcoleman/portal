@@ -1,5 +1,23 @@
 {{> includes/header.html}}
 
-Hello world
+<div id="myPublisherDiv"></div>
+<script type="text/javascript">
+  // Initialize API key, session, and token...
+  // Think of a session as a room, and a token as the key to get in to the room
+  // Sessions and tokens are generated on your server and passed down to the client
+  var apiKey = "23041672";
+  var sessionId = "1_MX4yMzA0MTY3Mn4xMjcuMC4wLjF-U2F0IEZlYiAyMyAxMDoyNzozMSBQU1QgMjAxM34wLjY4ODg2MTk3fg";
+  var token = "T1==cGFydG5lcl9pZD0yMzA0MTY3MiZzZGtfdmVyc2lvbj10YnJ1YnktdGJyYi12MC45MS4yMDExLTAyLTE3JnNpZz00NDI4YjUxNDViNzRjMTMyNGUyZmY5ZGQ2ZGU1NDE3ZWVhZjRlOTNiOnJvbGU9cHVibGlzaGVyJnNlc3Npb25faWQ9JmNyZWF0ZV90aW1lPTEzNjE2NDQwNTAmbm9uY2U9MC4yMTA5NDkwNjEwNzMyNTQ4NCZleHBpcmVfdGltZT0xMzYxNzMwNDU1JmNvbm5lY3Rpb25fZGF0YT0=";
+
+  // Initialize session, set up event listeners, and connect
+  var session = TB.initSession(sessionId);
+  session.addEventListener('sessionConnected', sessionConnectedHandler);
+  session.connect(apiKey, token);
+  
+  function sessionConnectedHandler(event) {
+    var publisher = TB.initPublisher(apiKey, 'myPublisherDiv');
+    session.publish(publisher);
+  }
+</script>
 
 {{> includes/footer.html}}

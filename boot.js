@@ -19,5 +19,5 @@ app.use(express.static(__dirname + '/public', {}));
 // routes
 require('./routes');
 
-app.listen(8000);
+app.listen(3000);
 console.log('Web server listening on port: 3000');

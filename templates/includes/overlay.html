@@ -1,0 +1,107 @@
+
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+<!-- CSS styles for Overlay -->
+
+
+<style type="text/css">
+
+.rightSide {
+
+/* Overlay div styles */
+	background-color: #fff;
+	opacity: .4;
+	text-align: left;
+	float: right;
+	padding: 15px 0 0 15px;
+
+/* Manually pushing div, should probably find height of the video */
+	margin: -150px -100% 0 0; 
+
+/* Type styles */
+	font-family: "freight-sans-pro", "helvetica";
+	font-weight: 400;
+	color: #000;
+	font-size: 1em;
+
+
+}
+
+.title {
+	text-transform: uppercase;
+	opacity: .3;
+	font-size: .7em;
+}
+
+.message {
+	font-style: italic;
+	padding: 0 10px 15px 0 ;
+	font-size: 1.5em;
+	line-height: 1em;
+}
+
+.user {
+	text-align: left;
+	padding: 0 0 30px 0;
+	font-weight: 600;
+	text-transform: uppercase;
+	font-size: 1em;
+	opacity: .6;
+}
+
+</style>
+
+
+
+
+
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+<!-- Javascript for overlay -->
+
+<script type="text/javascript">
+	
+	$(document).ready(function(){
+
+		// Push div up depending on the size of the video? 
+
+	});
+
+	$('body').click(function(){
+
+		$('.rightSide').animate({
+			marginRight: "0"
+		}, "slow");
+	});
+
+
+
+</script>
+
+
+
+
+
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+<!-- Markup for the overlay -->
+
+	<div class="rightSide">
+
+		<h3 class="title">Message</h3>
+		<section class="message">
+			This is definitely the coolest thing since wearable blankets.  
+		</section>
+
+		<aside class="user">Thomas</aside>
+
+	
+	</div>
+
+	<div class="push">
+	</div>
+
+
+
+
+
+
+
+

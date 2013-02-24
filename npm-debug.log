@@ -1,0 +1,51 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', 'node-google-weather' ]
+2 info using npm@1.1.61
+3 info using node@v0.8.9
+4 verbose read json /Users/theman/portal/package.json
+5 warn package.json rumgr@1.1.0 No README.md file found!
+6 verbose read json /Users/theman/portal/node_modules/express/package.json
+7 verbose read json /Users/theman/portal/node_modules/hogan-engine/package.json
+8 verbose read json /Users/theman/portal/node_modules/nodemon/package.json
+9 verbose from cache /Users/theman/portal/package.json
+10 verbose readDependencies using package.json deps
+11 verbose cache add [ 'node-google-weather', null ]
+12 silly cache add name=undefined spec="node-google-weather" args=["node-google-weather",null]
+13 verbose parsed url { pathname: 'node-google-weather',
+13 verbose parsed url   path: 'node-google-weather',
+13 verbose parsed url   href: 'node-google-weather' }
+14 silly lockFile 1447b130-node-google-weather node-google-weather
+15 verbose lock node-google-weather /Users/theman/.npm/1447b130-node-google-weather.lock
+16 silly lockFile 1447b130-node-google-weather node-google-weather
+17 verbose addNamed [ 'node-google-weather', '' ]
+18 verbose addNamed [ null, '' ]
+19 silly lockFile de93b447-node-google-weather node-google-weather@
+20 verbose lock node-google-weather@ /Users/theman/.npm/de93b447-node-google-weather.lock
+21 silly addNameRange { name: 'node-google-weather', range: '', hasData: false }
+22 verbose url raw node-google-weather
+23 verbose url resolving [ 'https://registry.npmjs.org/', './node-google-weather' ]
+24 verbose url resolved https://registry.npmjs.org/node-google-weather
+25 info trying registry request attempt 1 at 15:44:45
+26 http GET https://registry.npmjs.org/node-google-weather
+27 http 404 https://registry.npmjs.org/node-google-weather
+28 silly registry.get cb [ 404,
+28 silly registry.get   { server: 'CouchDB/1.2.1 (Erlang OTP/R15B03)',
+28 silly registry.get     date: 'Sat, 23 Feb 2013 23:44:46 GMT',
+28 silly registry.get     'content-type': 'application/json',
+28 silly registry.get     'content-length': '52',
+28 silly registry.get     'cache-control': 'must-revalidate' } ]
+29 silly lockFile de93b447-node-google-weather node-google-weather@
+30 error 404 'node-google-weather' is not in the npm registry.
+30 error 404 You should bug the author to publish it
+30 error 404
+30 error 404 Maybe try 'npm search google weather'
+30 error 404
+30 error 404 Note that you can also install from a
+30 error 404 tarball, folder, or http url, or git url.
+31 error System Darwin 12.2.1
+32 error command "node" "/usr/local/bin/npm" "install" "node-google-weather"
+33 error cwd /Users/theman/portal
+34 error node -v v0.8.9
+35 error npm -v 1.1.61
+36 error code E404
+37 verbose exit [ 1, true ]

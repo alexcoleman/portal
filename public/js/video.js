@@ -18,11 +18,15 @@ function sessionConnectedHandler(event) {
   var publisher = TB.initPublisher(apiKey);
   session.publish(publisher);
 
-  // hide my mirror
-  $('.OT_publisher').hide();
-
   // Subscribe to streams that were in the session when we connected
   subscribeToStreams(event.streams);
+
+  removePublisher();
+}
+
+function removePublisher() {
+  // hide my mirror
+  $('.OT_publisher').hide();
 }
 
 function streamCreatedHandler(event) {

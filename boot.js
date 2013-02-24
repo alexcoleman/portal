@@ -15,6 +15,7 @@ app.engine('html', hoganEngine);
 app.set('views', __dirname + '/templates');
 app.set('view engine', 'html');
 app.use(express.static(__dirname + '/public', {}));
+app.use(express.bodyParser());
 
 // routes
 require('./routes');

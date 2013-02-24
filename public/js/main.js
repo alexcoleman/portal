@@ -7,7 +7,10 @@ var previousMessage = '';
       
       var message = result.page.message;
 
+      $('#messages').removeClass('messagesanimation');
+
       if ( message != previousMessage ) {
+        $('#messages').addClass('messagesanimation');
         $('#messages .message').html(message);
         
         previousMessage = message;

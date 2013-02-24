@@ -1,7 +1,8 @@
 APP_ROOT = __dirname;
 
 var express = require('express'),
-    hoganEngine = require('hogan-engine');
+    hoganEngine = require('hogan-engine'),
+    OpenTok = require('opentok');
 
 var app = express();
 
@@ -16,6 +17,9 @@ app.set('views', __dirname + '/templates');
 app.set('view engine', 'html');
 app.use(express.static(__dirname + '/public', {}));
 app.use(express.bodyParser());
+
+
+require('./views/index.js');
 
 // routes
 require('./routes');

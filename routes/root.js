@@ -4,6 +4,7 @@ var express = require('express'),
 
 // Route
 app.get('/', function (req, res, next) {
+
   var context = {
     page: {
       title: ""

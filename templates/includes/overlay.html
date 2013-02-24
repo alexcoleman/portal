@@ -35,7 +35,7 @@ body
 	font-size: 1em;
 
 	width: 400px;
-
+	box-shadow:0 4px 4px rgba(0,0,0,.2);
 
 }
 
@@ -66,6 +66,8 @@ body
 
 .messagesanimation {-webkit-animation:slidein 5s ease;}
 
+.opacityin {-webkit-animation:opacityin 4s ease;}
+
 @-webkit-keyframes slidein {
   0% {right:-200px; opacity:0;}
   10% {right:0; opacity:1;}
@@ -73,8 +75,15 @@ body
   100% {right:-200px; opacity:0;}
 }
 
+@-webkit-keyframes opacityin {
+  0% {opacity:0;}
+  90% {opacity:0;}
+  100% {opacity:1;}
+}
 
-#instructions {padding:12px; color:#FFF; background-color:rgba(0,133,210,.2); font-size:18px; position:absolute; bottom:10px; left:10px; text-shadow:0 1px 1px rgba(0,0,0,.2); font-weight:100; font-family: "freight-sans-pro", "helvetica"; text-transform:uppercase;}
+
+#instructions {padding:12px; color:#cbe2ef; background-color:rgba(0,133,210,.2); font-size:14px; letter-spacing:1px; position:absolute; bottom:10px; left:10px; text-shadow:0 1px 1px rgba(0,0,0,.2); font-weight:100; font-family: "freight-sans-pro", "helvetica"; text-transform:uppercase;}
+#instructions strong {color:#FFF; font-weight:500;}
 </style>
 
 
@@ -98,8 +107,8 @@ $('#messages').hide();
 
 </script>
 
-	<div id="instructions">
-		Transmit (702) 789-7772
+	<div id="instructions" class="opacityin">
+		Transmit to <strong>(702) 789-7772</strong>
 	</div>
 
 

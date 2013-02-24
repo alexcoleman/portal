@@ -1,0 +1,21 @@
+body {position:fixed; top:0; left:0; bottom:0; right:0; padding:0; margin:0;}
+.rightSide {z-index:100; position:absolute; top:40%; right:-200px; background-color: #fff; text-align: left; padding: 15px 0 0 15px; opacity:0; font-family: "freight-sans-pro", "helvetica"; font-weight: 400; color: #000; font-size: 1em; width: 400px; box-shadow:0 4px 4px rgba(0,0,0,.2);}
+.title {text-transform: uppercase; opacity: .3; font-size: .7em; line-height: .1em;}
+.message {font-style: italic; margin-bottom:10px; padding: 0 10px 15px 0 ; font-size: 1.5em; line-height: 1em;}
+.messagesanimation {-webkit-animation:slidein 5s ease;}
+.opacityin {-webkit-animation:opacityin 4s ease;}
+#instructions {z-index:100; padding:12px; color:#cbe2ef; background-color:rgba(0,133,210,.2); font-size:14px; letter-spacing:1px; position:absolute; bottom:10px; left:10px; text-shadow:0 1px 1px rgba(0,0,0,.2); font-weight:100; font-family: "freight-sans-pro", "helvetica"; text-transform:uppercase;}
+#instructions strong {color:#FFF; font-weight:500;}
+
+@-webkit-keyframes slidein {
+  0% {right:-200px; opacity:0;}
+  10% {right:0; opacity:1;}
+  90% {right:0; opacity:1;}
+  100% {right:-200px; opacity:0;}
+}
+
+@-webkit-keyframes opacityin {
+  0% {opacity:0;}
+  90% {opacity:0;}
+  100% {opacity:1;}
+}

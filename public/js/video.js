@@ -2,8 +2,8 @@
 // Think of a session as a room, and a token as the key to get in to the room
 // Sessions and tokens are generated on your server and passed down to the client
 var apiKey = "1127";
-var sessionId = "2_MX4xMTI3fn5TYXQgRmViIDIzIDExOjExOjI5IFBTVCAyMDEzfjAuMDQ3NzAyNzl-";
-var token = "T1==cGFydG5lcl9pZD0xMTI3JnNpZz0zZmE0NmI4Mzg0YzQzMzk1MmVkMDJiOTFlM2UxNmMzZmQxMDM0NTQ4OnNlc3Npb25faWQ9Ml9NWDR4TVRJM2ZuNVRZWFFnUm1WaUlESXpJREV4T2pFeE9qSTVJRkJUVkNBeU1ERXpmakF1TURRM056QXlOemwtJmNyZWF0ZV90aW1lPTEzNjE2NDY2OTAmcm9sZT1wdWJsaXNoZXImbm9uY2U9MTM2MTY0NjY5MC4wMzA4MjQ1MDk0Mzkx";
+var sessionId = "1_MX4xMTI3fn5TYXQgRmViIDIzIDIyOjIzOjU2IFBTVCAyMDEzfjAuNDk1NDI4OH4";
+var token = "T1==cGFydG5lcl9pZD0xMTI3JnNpZz1hZGIzYzZkZGYyNjdkOGU5Y2Y5NzA5MDU1YWY5Y2QzY2Q4ZWEwNDg3OnNlc3Npb25faWQ9MV9NWDR4TVRJM2ZuNVRZWFFnUm1WaUlESXpJREl5T2pJek9qVTJJRkJUVkNBeU1ERXpmakF1TkRrMU5ESTRPSDQmY3JlYXRlX3RpbWU9MTM2MTY4NzQ2OSZyb2xlPXB1Ymxpc2hlciZub25jZT0xMzYxNjg3NDY5LjY3OTY4MTUyMjM1NTY=";
 
 // Enable console logs for debugging
 TB.setLogLevel(TB.NONE);
